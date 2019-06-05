@@ -1,19 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,
+  <meta name="viewport" content="width=device-width,
           user-scalable=no,
           initial-scale=1.0,
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Forms</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
-<script type="text/javascript" src="./main.js"></script>
+<body>
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" autocomplete="off">
+    <fieldset>
+      <legend>Personal information</legend>
+      <label>Surname: <input type="text" name="my-form" required></label><br>
+      <label>Name: <input type="text" name="my-form"></label><br>
+      <label>How old are You? <input type="number" size="5" value="12" data-qa="field-value" name="my-form"></label><br>
+      <label>Full date of birth: <input type="date" name="my-form"></label><br>
+      <label>I accept the term of the agreement <input type="checkbox" name="my-form"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <label>E-mail: <input type="email" data-qa="field-placeholder" placeholder="email@example.com"
+          name="my-form"></label><br>
+      <label>Password: <input type="password" name="my-form" maxlength="8"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <label>Do you love cats?
+        <input type="radio" name="my-form"> Yes
+        <input type="radio" name="my-form"> No</label><br>
+      <label>What is your favorite color? <input type="color" name="my-form"></label><br>
+      <label>What time do you go to bed? <input type="time" name="my-form"></label><br>
+      <label>What are your favorite brand of cars?
+        <select size="4" name="my-form">
+          <option>BMW</option>
+          <option>Audi</option>
+          <option>Lada</option>
+        </select>
+      </label><br>
+      <label>How do you rate our work? <input type="range" value="0" name="my-form"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label>Comments: <textarea rows="2" cols="20" name="my-form"></textarea></label><br>
+      <label>Would you recommend us?
+        <select name="my-form">
+          <option>yes</option>
+          <option>no</option>
+        </select>
+      </label>
+    </fieldset>
+    <input type="submit" name="my-form">
+  </form>
+
+  <script type="text/javascript" src="./main.js"></script>
 </body>
+
 </html>

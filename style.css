@@ -1,0 +1,26 @@
+input {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+select {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+[data-qa="field-value"] {
+  width: 65px;
+}
+
+[type="checkbox"],
+[type="range"],
+[type="password"] {
+  margin-bottom: 0;
+}
+
+[type="color"] {
+  margin-top: 4px;
+}
